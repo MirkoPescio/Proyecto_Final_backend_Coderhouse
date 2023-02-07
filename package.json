@@ -2,9 +2,9 @@
   "name": "proyecto_final_backend_coderhouse_final",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon ./src/server.js",
+    "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js Memory Memory mongodb://localhost/27017",
     "prod": "nodemon ./src/server.js SQLite Firebase",
     "DBscript": "node ./src/persistence/store/script.js"
