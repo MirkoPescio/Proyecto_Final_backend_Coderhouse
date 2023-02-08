@@ -19,7 +19,6 @@ exports.deleteInCart = (req, res, next) => {
 async function buy() {
     const cart = Cart.getCart().products;
     const productos = cart.map((element) => {
-        console.log(element);
         let nuevoElemento = {
             title: element.name,
             picture_url: element.img,
@@ -42,7 +41,7 @@ async function buy() {
         }
     );
     const data = await response.json();
-    open(data.init_point);
+    open(data.init_point, "_blank");
 }
 
 function createSendMail(mailConfig) {
