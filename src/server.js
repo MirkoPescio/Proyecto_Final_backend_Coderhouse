@@ -50,7 +50,6 @@ app.use(flash());
 app.use((req, res, next) => {
     app.locals.signinMessage = req.flash('signinMessage');
     app.locals.signupMessage = req.flash('signupMessage');
-    console.log(app.locals);
     next();
 });
 

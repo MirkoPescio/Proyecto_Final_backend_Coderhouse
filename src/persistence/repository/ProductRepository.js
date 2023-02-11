@@ -3,7 +3,7 @@ const productDaoFactory = new ProductDaoFactory()
 
 module.exports = class ProductRepository {
     constructor() {
-        this.dao = productDaoFactory.getDao()
+      this.dao = productDaoFactory.getDao()
     }
 
     async getAll() {

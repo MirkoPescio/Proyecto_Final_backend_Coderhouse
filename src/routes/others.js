@@ -13,7 +13,7 @@ const infoSystem = getSystemInformation();
 module.exports = (app) => { // recordar aplicar la dependencia logger
 
     app.get("/api/products-test", async (req, res) => {
-        console.log("Conexión establecida a faker");
+        logger.info("Conexión establecida a faker");
         logger.info("Ruta accedida");
         res.send(fakerData);
     });
